@@ -75,9 +75,26 @@ No son objetivos de extracción, van listadas porque dieron forma al diseño.
 * Matveeva OV, Chumakov PM. *Defects in interferon pathways as potential
   biomarkers of sensitivity to oncolytic viruses.* Rev Med Virol 2018,
   28:e2008. DOI [10.1002/rmv.2008](https://doi.org/10.1002/rmv.2008)
-* Forčić D et al. Vaccines 2024, 12:958. PMID 39339989.
+* Kurokawa C, Iankov ID, Anderson SK, Aderca I, Leontovich AA, Maurer MJ,
+  Oberg AL, Schroeder MA, Giannini C, Greiner SM, Becker MA, Thompson EA,
+  Haluska P, Jentoft ME, Parney IF, Weroha SJ, Jen J, Sarkaria JN, Galanis E.
+  *Constitutive Interferon Pathway Activation in Tumors as an Efficacy
+  Determinant Following Oncolytic Virotherapy.* J Natl Cancer Inst 2018,
+  110(10):1123-1132. DOI
+  [10.1093/jnci/djy033](https://doi.org/10.1093/jnci/djy033), PMID 29788332,
+  PMCID PMC6186520. Es la mejor evidencia de la capa de estado antiviral, ver
+  [`capas-de-evidencia.md`](capas-de-evidencia.md).
+* Forčić D, Mršić K, Perić-Balja M, Kurtović T, Ramić S, Silovski T,
+  Pedišić I, Milas I, Halassy B. *An Unconventional Case Study of Neoadjuvant
+  Oncolytic Virotherapy for Recurrent Breast Cancer.* Vaccines 2024, 12(9):958.
+  DOI [10.3390/vaccines12090958](https://doi.org/10.3390/vaccines12090958),
+  PMID 39339989, PMCID PMC11435696. Es el caso que motivó la pregunta, ver
+  [`origen-de-la-pregunta.md`](origen-de-la-pregunta.md).
 * OvirusTdb, grupo Raghava, IIIT-Delhi.
-  <https://webs.iiitd.edu.in/raghava/ovirustdb/>
+  <https://webs.iiitd.edu.in/raghava/ovirustdb/>. Catálogo de la literatura del
+  campo. Sus conteos de registros, especies virales, tipos de cáncer y líneas
+  celulares están **sin verificar** en este repositorio, porque el sitio no
+  respondió el 2026-10-23.
 
 ## Cómo agregar una fuente
 

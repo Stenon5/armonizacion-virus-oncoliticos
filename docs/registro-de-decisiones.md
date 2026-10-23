@@ -4,13 +4,15 @@ Cada decisión de armonización va aquí con una fecha y una razón. Una decisi�
 que después resulta equivocada se queda escrita y se corrige en una fila nueva
 más abajo. Las filas nunca se borran.
 
-La tabla está vacía porque todavía no se ha extraído ningún valor.
+Todavía no se ha extraído ningún valor, así que las filas de más abajo son
+decisiones de alcance y de citas, no de armonización de datos.
 
 ## Decisiones
 
 | Fecha | Decisión | Razón | Afecta |
 |---|---|---|---|
-| | | | |
+| 2026-10-23 | Se trae a este repositorio el encuadre y las capas de evidencia que estaban en un repositorio privado anterior, y se dejan fuera su motor de puntuación y la reimplementación del clasificador | Las dos líneas de trabajo apuntan a la misma pregunta, y mantenerlas separadas duplicaba el tema. El motor sigue fuera de alcance porque no hay datos con los que validarlo | `README.md`, `docs/origen-de-la-pregunta.md`, `docs/capas-de-evidencia.md` |
+| 2026-10-23 | No se traen cuatro cifras que venían de ese repositorio privado: el tamaño de la firma de genes, el número de xenoinjertos de validación, un coeficiente de correlación atribuido a un solo gen y los conteos de OvirusTdb | Al contrastarlas contra los resúmenes en PubMed no aparecieron, y el sitio de OvirusTdb no respondió. Una cifra sin fuente verificada no entra a un repositorio público | `docs/capas-de-evidencia.md`, `docs/fuentes.md` |
 
 ## Reversiones
 

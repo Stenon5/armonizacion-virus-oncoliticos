@@ -18,6 +18,18 @@ medición y la métrica. ¿Se pueden poner esos resultados en una sola tabla sin
 esconder las diferencias que los hacen incomparables, y cuántos modelos se
 comparten de verdad una vez que se resuelven los nombres?
 
+## De dónde sale la pregunta
+
+Un reporte de caso publicado en 2024 dejó a la vista que elegir qué virus probar
+contra un tumor concreto no tiene hoy una base comparable, y que esa decisión se
+toma estudio por estudio. El caso, el problema de investigación que deja
+planteado y el límite entre ese problema y cualquier uso en personas están en
+[`docs/origen-de-la-pregunta.md`](docs/origen-de-la-pregunta.md).
+
+La pregunta se puede descomponer en capas, y solo una de ellas tiene evidencia
+fuerte publicada. Esas capas, con sus citas, están en
+[`docs/capas-de-evidencia.md`](docs/capas-de-evidencia.md).
+
 ## Por qué importa
 
 Los tamizajes publicados son una fuente práctica de datos de permisividad para
@@ -88,12 +100,19 @@ separadas, cada una con su propio nivel de evidencia:
 Un ranking que mezcla evidencia clínica con inferencia basada en expresión y
 emite un único puntaje es desinformación bien formateada.
 
+Esto no es una preferencia de estilo. El tercero de los estudios fuente tamizó
+cinco virus en catorce cultivos derivados de paciente y ninguno resultó superior
+ni inferior en todos ellos, así que un ranking universal de virus no existe.
+El detalle está en [`docs/capas-de-evidencia.md`](docs/capas-de-evidencia.md).
+
 ## Distribución del repositorio
 
 ```
 kb/virus/              un archivo YAML por virus (fase 0)
 data/harmonized/       tablas CSV relacionadas (fase 1), por ahora solo encabezados
 referencia-manual/     un artículo extraído a mano, sellado antes de que corran los agentes
+docs/origen-de-la-pregunta.md   por qué existe el repositorio, con el caso que lo motivó
+docs/capas-de-evidencia.md      las capas de la pregunta y la evidencia de cada una
 docs/esquema.md        definiciones de las tablas y las preguntas abiertas
 docs/preregistro.md    fallas esperadas, escritas antes de la extracción
 docs/registro-de-decisiones.md  cada decisión de armonización, con fecha y razón
