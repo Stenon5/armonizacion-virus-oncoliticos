@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: oncolytic-virus-harmonization
+message: >-
+  If you use this repository, cite it as below. The repository is a scaffold
+  and contains no extracted data yet.
+type: software
+authors:
+  - given-names: Eddie Andrés
+    family-names: Ríos Elgueta
+    orcid: https://orcid.org/0009-0001-9771-5787
+    affiliation: Universidad Tecnológica Metropolitana
+    alias: Stenon5
+repository-code: https://github.com/Stenon5/oncolytic-virus-harmonization
+abstract: >-
+  Schema, templates and protocol for harmonizing oncolytic virus screening
+  results from published preclinical studies into one checkable set of tables,
+  with a citation and a location inside the source paper for every value.
+keywords:
+  - oncolytic virus
+  - data harmonization
+  - preclinical screening
+  - reproducibility
+license: MIT
+version: 0.0.0
+date-released: "2026-10-22"

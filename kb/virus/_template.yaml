@@ -1,0 +1,51 @@
+# Template for the virus knowledge base (phase 0).
+# Rule: every field with biological content carries its own citation.
+# Without a citation the value stays null and the gap goes to open_questions.
+# Copy this file to kb/virus/<virus_id>.yaml and fill it in.
+
+virus_id: example-strain
+species: Species name
+strain: Strain name
+genome: dsDNA | ssRNA- | ssRNA+ | dsRNA
+engineered: false
+engineering_notes: null   # what was inserted or deleted, with a citation
+
+entry:
+  receptors:
+    - gene_symbol: CD46
+      role: primary | alternative
+      evidence_doi: null
+  notes: null
+
+interferon_sensitivity:
+  # What happens to this virus in a tumour with an intact type I interferon
+  # response.
+  level: high | moderate | low | unknown
+  isg_signature_applies: true | false | unknown
+  # The sign of the association is not the same for every virus, so it is
+  # recorded explicitly instead of assumed.
+  signature_direction: resistance | susceptibility | unknown
+  evidence_doi: null
+
+pathway_dependencies:
+  - pathway: RAS/MEK
+    relation: required | exploits_loss
+    evidence_doi: null
+
+normal_tissue_tropism:
+  summary: null
+  evidence_doi: null
+
+clinical_status:
+  stage: preclinical | phase_1 | phase_2 | phase_3 | approved
+  indications: []
+  evidence_doi: null
+
+curation:
+  added: null          # YYYY-MM-DD
+  last_reviewed: null  # YYYY-MM-DD
+  extracted_by: human | agent
+  reviewed_by_human: false
+
+open_questions:
+  - What still has to be curated for this virus
