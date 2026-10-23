@@ -66,6 +66,15 @@ por la que se eligió cada uno están en [`docs/fuentes.md`](docs/fuentes.md).
 Aquí no se redistribuye ningún PDF ni ninguna figura de esos artículos. Solo
 los valores extraídos, su cita y su ubicación dentro del artículo.
 
+## Qué se sabe ya, antes de extraer
+
+Un conteo preliminar de modelos dice que los estudios de 2011 y 2020 comparten
+al menos 45 modelos del panel NCI-60, y que el de 2024 no comparte ninguno con
+ellos, porque usa cultivos de pacientes. El detalle y sus límites están en
+[`docs/solapamiento-de-modelos.md`](docs/solapamiento-de-modelos.md). Que el
+tercer estudio no sea comparable a nivel de modelo es un resultado, no un
+fracaso: fija qué puede y qué no puede responder el dataset.
+
 ## Decisión de diseño que no cambia
 
 La salida nunca se reduce a un solo número. Cada virus devuelve capas
@@ -90,6 +99,7 @@ docs/preregistro.md    fallas esperadas, escritas antes de la extracción
 docs/registro-de-decisiones.md  cada decisión de armonización, con fecha y razón
 docs/fuentes.md        los tres estudios, con DOI y licencia
 docs/backlog-de-issues.md  la lista de tareas, lista para abrirse como issues
+docs/solapamiento-de-modelos.md  cuántos modelos comparten los tres estudios
 src/ovh/               paquete (esqueleto)
 tests/                 pruebas (omitidas hasta que exista el código)
 ```
