@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-title: oncolytic-virus-harmonization
+title: armonizacion-virus-oncoliticos
 message: >-
-  If you use this repository, cite it as below. The repository is a scaffold
-  and contains no extracted data yet.
+  Si usas este repositorio, cítalo como se indica abajo. El repositorio es un
+  andamiaje y todavía no contiene datos extraídos.
 type: software
 authors:
   - given-names: Eddie Andrés
@@ -10,16 +10,17 @@ authors:
     orcid: https://orcid.org/0009-0001-9771-5787
     affiliation: Universidad Tecnológica Metropolitana
     alias: Stenon5
-repository-code: https://github.com/Stenon5/oncolytic-virus-harmonization
+repository-code: https://github.com/Stenon5/armonizacion-virus-oncoliticos
 abstract: >-
-  Schema, templates and protocol for harmonizing oncolytic virus screening
-  results from published preclinical studies into one checkable set of tables,
-  with a citation and a location inside the source paper for every value.
+  Esquema, plantillas y protocolo para armonizar resultados de tamizaje de
+  virus oncolíticos publicados en estudios preclínicos dentro de un solo
+  conjunto de tablas revisable, con una cita y una ubicación dentro del
+  artículo de origen para cada valor.
 keywords:
-  - oncolytic virus
-  - data harmonization
-  - preclinical screening
-  - reproducibility
+  - virus oncolítico
+  - armonización de datos
+  - tamizaje preclínico
+  - reproducibilidad
 license: MIT
 version: 0.0.0
 date-released: "2026-10-22"

@@ -1,22 +1,22 @@
 ---
-name: Schema change
-about: Add, remove or redefine a field in the harmonization schema
-title: "[schema] "
-labels: ["schema"]
+name: Cambio en el esquema
+about: Agregar, quitar o redefinir un campo del esquema de armonización
+title: "[esquema] "
+labels: ["esquema"]
 ---
 
-**Field**
-Table and field name.
+**Campo**
+Tabla y nombre del campo.
 
-**What breaks without the change**
-Name the paper and the value that cannot be recorded correctly today.
+**Qué se rompe sin el cambio**
+Nombra el artículo y el valor que hoy no se puede registrar bien.
 
-**Proposed definition**
-Type, allowed values, and whether it is required.
+**Definición propuesta**
+Tipo, valores permitidos, y si es obligatorio.
 
-**Acceptance criteria**
-- [ ] `docs/schema.md` updated.
-- [ ] A row added to `docs/decision-log.md` with the date and the reason.
-- [ ] The CSV headers in `data/harmonized/` updated.
-- [ ] The header test in `tests/test_schema.py` updated.
-- [ ] Rows already extracted either migrated or listed as needing migration.
+**Criterios de aceptación**
+- [ ] `docs/esquema.md` actualizado.
+- [ ] Una fila agregada a `docs/registro-de-decisiones.md` con la fecha y la razón.
+- [ ] Los encabezados de los CSV en `data/harmonized/` actualizados.
+- [ ] La prueba de encabezados en `tests/test_schema.py` actualizada.
+- [ ] Las filas ya extraídas quedan migradas o listadas como pendientes de migración.

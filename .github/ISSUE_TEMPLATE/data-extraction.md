@@ -1,23 +1,23 @@
 ---
-name: Data extraction
-about: Extract values from one paper into the harmonized tables
-title: "[extract] "
-labels: ["phase-1", "extraction"]
+name: Extracción de datos
+about: Extraer valores de un artículo hacia las tablas armonizadas
+title: "[extracción] "
+labels: ["fase-1", "extracción"]
 ---
 
-**Paper**
-DOI and title.
+**Artículo**
+DOI y título.
 
-**What is being extracted**
-Which table or figure, and which fields of the schema.
+**Qué se está extrayendo**
+Qué tabla o figura, y qué campos del esquema.
 
-**Who or what extracts it**
-Human, or agent with the model and the prompt recorded.
+**Quién o qué lo extrae**
+Una persona, o un agente con el modelo y el prompt registrados.
 
-**Acceptance criteria**
-- [ ] Every row has `source_doi` and `source_location`.
-- [ ] Every row has a `confidence` value, low for anything read off a figure.
-- [ ] `read_method` says table, text, or which tool digitised the figure.
-- [ ] Values the paper does not state are left empty, not guessed.
-- [ ] No PDF, figure or complete supplementary table is committed.
-- [ ] Any new judgement call has a row in `docs/decision-log.md`.
+**Criterios de aceptación**
+- [ ] Cada fila tiene `source_doi` y `source_location`.
+- [ ] Cada fila tiene un valor de `confidence`, bajo para todo lo que se haya leído de una figura.
+- [ ] `read_method` dice tabla, texto, o qué herramienta digitalizó la figura.
+- [ ] Los valores que el artículo no declara quedan vacíos, no adivinados.
+- [ ] No se commitea ningún PDF, figura ni tabla suplementaria completa.
+- [ ] Todo juicio de criterio nuevo tiene una fila en `docs/registro-de-decisiones.md`.

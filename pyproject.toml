@@ -3,14 +3,14 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "oncolytic-virus-harmonization"
+name = "armonizacion-virus-oncoliticos"
 version = "0.0.0"
-description = "Schema and tooling to harmonize published oncolytic virus screening results. Scaffold, no data yet."
+description = "Esquema y herramientas para armonizar resultados publicados de tamizaje de virus oncolíticos. Andamiaje, todavía sin datos."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [{ name = "Stenon5" }]
-keywords = ["oncolytic virus", "data harmonization", "reproducibility"]
+keywords = ["virus oncolítico", "armonización de datos", "reproducibilidad"]
 classifiers = [
   "Development Status :: 1 - Planning",
   "Intended Audience :: Science/Research",
@@ -29,7 +29,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Stenon5/oncolytic-virus-harmonization"
+Homepage = "https://github.com/Stenon5/armonizacion-virus-oncoliticos"
 
 [project.scripts]
 ovh-validate = "ovh.validate:main"

@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Scope of this repository
-    url: https://github.com/Stenon5/oncolytic-virus-harmonization#what-this-is-not
-    about: This project is a research aid for study design. It is not clinical decision support and it holds no laboratory protocols.
+  - name: Alcance de este repositorio
+    url: https://github.com/Stenon5/armonizacion-virus-oncoliticos#lo-que-esto-no-es
+    about: Este proyecto es una ayuda de investigación para diseñar estudios. No es apoyo a la decisión clínica y no contiene protocolos de laboratorio.

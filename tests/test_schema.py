@@ -1,8 +1,8 @@
-"""Tests for the harmonized tables.
+"""Pruebas de las tablas armonizadas.
 
-The tests that describe unwritten code are skipped on purpose, with the reason
-in the skip message, so that continuous integration on a scaffold repository
-reports the truth instead of a red build.
+Las pruebas que describen código sin escribir están omitidas a propósito, con
+la razón en el mensaje de omisión, para que la integración continua de un
+repositorio de andamiaje reporte la verdad en vez de un build rojo.
 """
 
 from __future__ import annotations
@@ -58,7 +58,7 @@ EXPECTED_HEADERS = {
 
 @pytest.mark.parametrize("filename", sorted(EXPECTED_HEADERS))
 def test_table_headers_match_the_schema(filename: str) -> None:
-    """This one runs today. The headers must match docs/schema.md."""
+    """Esta sí corre hoy. Los encabezados tienen que coincidir con docs/esquema.md."""
     path = DATA / filename
     with path.open(newline="", encoding="utf-8") as handle:
         header = next(csv.reader(handle))
@@ -66,33 +66,33 @@ def test_table_headers_match_the_schema(filename: str) -> None:
 
 
 def test_virus_template_exists() -> None:
-    """This one runs today."""
+    """Esta sí corre hoy."""
     assert (REPO / "kb" / "virus" / "_template.yaml").is_file()
 
 
 @pytest.mark.skip(
-    reason="not implemented yet: validate_tables, see docs/issues-backlog.md phase 1"
+    reason="todavía no implementado: validate_tables, ver docs/backlog-de-issues.md fase 1"
 )
 def test_every_measurement_has_a_resolvable_assay() -> None:
-    raise AssertionError("unreachable while skipped")
+    raise AssertionError("inalcanzable mientras esté omitida")
 
 
 @pytest.mark.skip(
-    reason="not implemented yet: validate_tables, see docs/issues-backlog.md phase 1"
+    reason="todavía no implementado: validate_tables, ver docs/backlog-de-issues.md fase 1"
 )
 def test_every_measurement_carries_a_doi_and_a_location() -> None:
-    raise AssertionError("unreachable while skipped")
+    raise AssertionError("inalcanzable mientras esté omitida")
 
 
 @pytest.mark.skip(
-    reason="not implemented yet: validate_kb, see docs/issues-backlog.md phase 0"
+    reason="todavía no implementado: validate_kb, ver docs/backlog-de-issues.md fase 0"
 )
 def test_every_kb_field_with_content_has_a_citation() -> None:
-    raise AssertionError("unreachable while skipped")
+    raise AssertionError("inalcanzable mientras esté omitida")
 
 
 @pytest.mark.skip(
-    reason="not implemented yet: no data extracted, see gold-standard/README.md"
+    reason="todavía no implementado: no hay datos extraídos, ver referencia-manual/README.md"
 )
 def test_shared_models_between_the_three_studies_are_counted() -> None:
-    raise AssertionError("unreachable while skipped")
+    raise AssertionError("inalcanzable mientras esté omitida")

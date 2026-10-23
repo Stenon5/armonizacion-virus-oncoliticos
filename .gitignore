@@ -1,4 +1,4 @@
-# Raw third party material is never committed
+# El material crudo de terceros nunca se commitea
 data/raw/
 *.pdf
 
@@ -16,12 +16,12 @@ dist/
 # Notebooks
 .ipynb_checkpoints/
 
-# Environment and secrets
+# Entorno y secretos
 .env
 *.key
 *.pem
 
-# Editors and operating systems
+# Editores y sistemas operativos
 .vscode/
 .idea/
 .DS_Store

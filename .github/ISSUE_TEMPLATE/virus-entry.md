@@ -1,17 +1,17 @@
 ---
-name: Virus knowledge base entry
-about: Add or revise one virus file in kb/virus/
-title: "[kb] "
-labels: ["phase-0", "knowledge-base"]
+name: Entrada en la base de conocimiento de virus
+about: Agregar o revisar un archivo de virus en kb/virus/
+title: "[base] "
+labels: ["fase-0", "base-de-conocimiento"]
 ---
 
 **Virus**
-Species and strain.
+Especie y cepa.
 
-**Acceptance criteria**
-- [ ] File follows `kb/virus/_template.yaml`.
-- [ ] Every field with biological content has its own `evidence_doi`.
-- [ ] Every DOI resolves and the cited work actually supports the statement.
-- [ ] Fields without a citation are `null` and appear in `open_questions`.
-- [ ] `curation.extracted_by` and `curation.reviewed_by_human` are filled in.
-- [ ] One virus per pull request.
+**Criterios de aceptación**
+- [ ] El archivo sigue `kb/virus/_template.yaml`.
+- [ ] Todo campo con contenido biológico tiene su propio `evidence_doi`.
+- [ ] Todo DOI resuelve y el trabajo citado respalda de verdad lo que se afirma.
+- [ ] Los campos sin cita están en `null` y aparecen en `open_questions`.
+- [ ] `curation.extracted_by` y `curation.reviewed_by_human` están rellenados.
+- [ ] Un virus por pull request.

@@ -1,14 +1,14 @@
-# Template for the virus knowledge base (phase 0).
-# Rule: every field with biological content carries its own citation.
-# Without a citation the value stays null and the gap goes to open_questions.
-# Copy this file to kb/virus/<virus_id>.yaml and fill it in.
+# Plantilla para la base de conocimiento de virus (fase 0).
+# Regla: todo campo con contenido biológico carga su propia cita.
+# Sin cita, el valor se queda en null y el vacío pasa a open_questions.
+# Copia este archivo a kb/virus/<virus_id>.yaml y rellénalo.
 
 virus_id: example-strain
-species: Species name
-strain: Strain name
+species: Nombre de la especie
+strain: Nombre de la cepa
 genome: dsDNA | ssRNA- | ssRNA+ | dsRNA
 engineered: false
-engineering_notes: null   # what was inserted or deleted, with a citation
+engineering_notes: null   # qué se insertó o se eliminó, con una cita
 
 entry:
   receptors:
@@ -18,12 +18,12 @@ entry:
   notes: null
 
 interferon_sensitivity:
-  # What happens to this virus in a tumour with an intact type I interferon
-  # response.
+  # Qué le pasa a este virus en un tumor con una respuesta de interferón tipo I
+  # intacta.
   level: high | moderate | low | unknown
   isg_signature_applies: true | false | unknown
-  # The sign of the association is not the same for every virus, so it is
-  # recorded explicitly instead of assumed.
+  # El signo de la asociación no es el mismo para todos los virus, así que se
+  # registra explícitamente en vez de asumirlo.
   signature_direction: resistance | susceptibility | unknown
   evidence_doi: null
 
@@ -42,10 +42,10 @@ clinical_status:
   evidence_doi: null
 
 curation:
-  added: null          # YYYY-MM-DD
-  last_reviewed: null  # YYYY-MM-DD
+  added: null          # AAAA-MM-DD
+  last_reviewed: null  # AAAA-MM-DD
   extracted_by: human | agent
   reviewed_by_human: false
 
 open_questions:
-  - What still has to be curated for this virus
+  - Qué queda por curar para este virus

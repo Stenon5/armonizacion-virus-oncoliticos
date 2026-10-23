@@ -1,147 +1,154 @@
-# oncolytic-virus-harmonization
+# armonizacion-virus-oncoliticos
 
-A documented attempt to put oncolytic virus screening results from published
-preclinical papers into one schema, so that measurements from different studies
-can be compared or shown to be incomparable.
+Un intento documentado de poner los resultados de tamizaje de virus oncolíticos
+publicados en estudios preclínicos dentro de un solo esquema, para que las
+mediciones de estudios distintos se puedan comparar o quede demostrado que no
+son comparables.
 
-**Status: scaffold. No data has been extracted yet.** The schema, the templates
-and the empty tables are here. The `data/harmonized/` tables contain headers
-only. Nothing in this repository has been measured, scored or benchmarked.
+**Estado: andamiaje. Todavía no se ha extraído ningún dato.** Están el esquema,
+las plantillas y las tablas vacías. Las tablas de `data/harmonized/` tienen
+solo los encabezados. Nada en este repositorio ha sido medido, puntuado ni
+sometido a un benchmark.
 
-## The question
+## La pregunta
 
-Two screens of the same cell line panel with the same viral genus can
-differ in assay, multiplicity of infection, timepoint and metric. Can those results be placed in a single table without
-hiding the differences that make them incomparable, and how many models are
-actually shared once names are resolved?
+Dos tamizajes del mismo panel de líneas celulares con el mismo género viral
+pueden diferir en el ensayo, la multiplicidad de infección, el tiempo de
+medición y la métrica. ¿Se pueden poner esos resultados en una sola tabla sin
+esconder las diferencias que los hacen incomparables, y cuántos modelos se
+comparten de verdad una vez que se resuelven los nombres?
 
-## Why it matters
+## Por qué importa
 
-Published screens are a practical source of permissivity data for anyone
-without a laboratory. If they cannot be compared, then a claim about one
-virus being better than another across studies rests on a comparison nobody
-has checked. Finding out
-exactly where the comparison breaks is the useful outcome, whether or not a
-usable table comes out of it.
+Los tamizajes publicados son una fuente práctica de datos de permisividad para
+cualquiera que no tenga laboratorio. Si no se pueden comparar, entonces
+afirmar que un virus es mejor que otro entre estudios se apoya en una
+comparación que nadie ha revisado. Averiguar dónde exactamente se rompe la
+comparación es el resultado útil, salga o no una tabla aprovechable de todo
+esto.
 
-A catalogue of this literature already exists in the form of OvirusTdb
-(Raghava group, IIIT-Delhi, <https://webs.iiitd.edu.in/raghava/ovirustdb/>).
-It answers what has been tried. It does not answer whether two reported
-numbers mean the same thing.
+Ya existe un catálogo de esta literatura, OvirusTdb
+(grupo Raghava, IIIT-Delhi, <https://webs.iiitd.edu.in/raghava/ovirustdb/>).
+Responde qué se ha probado. No responde si dos números reportados significan
+lo mismo.
 
-## What this is NOT
+## Lo que esto NO es
 
-* **Not a treatment selector.** It cannot be used to choose a therapy for a
-  patient.
-* **Not clinical decision support.**
-* **Not a guide to self-administering any virus.** Nothing here describes how
-  to obtain, handle or administer a virus to a person or an animal.
-* **No laboratory protocols.** This repository holds data about published
-  experiments, not instructions for performing them.
-* **Nothing here is clinically actionable.** The underlying studies work with
-  small numbers of models, and organoid work in this field runs with
-  single-digit to low double-digit patient counts.
+* **No es un selector de tratamiento.** No sirve para elegir una terapia para
+  un paciente.
+* **No es apoyo a la decisión clínica.**
+* **No es una guía para autoadministrarse ningún virus.** Nada de lo que hay
+  aquí describe cómo conseguir, manipular o administrar un virus a una persona
+  o a un animal.
+* **No contiene protocolos de laboratorio.** Este repositorio guarda datos
+  sobre experimentos publicados, no instrucciones para hacerlos.
+* **Nada de lo que hay aquí es clínicamente aplicable.** Los estudios de base
+  trabajan con pocos modelos, y el trabajo con organoides en este campo corre
+  con números de pacientes de un dígito o de dos dígitos bajos.
 
-## Scope of the public work
+## Alcance del trabajo público
 
-Phase 0 and phase 1 only.
+Solo fase 0 y fase 1.
 
-| Phase | Deliverable | In this repository |
+| Fase | Entregable | En este repositorio |
 |---|---|---|
-| 0 | A versioned knowledge base, one YAML file per virus, every biological field carrying its own citation | template only, no virus files yet |
-| 1 | Harmonization of three published studies into one schema, with assay metadata and a per value confidence label | schema and empty tables |
+| 0 | Una base de conocimiento versionada, un archivo YAML por virus, con cada campo biológico cargando su propia cita | solo la plantilla, todavía sin archivos de virus |
+| 1 | Armonización de tres estudios publicados en un solo esquema, con metadatos del ensayo y una etiqueta de confianza por valor | el esquema y las tablas vacías |
 
-A scoring engine and a benchmark are out of scope until there is data to
-validate them against. Starting with the engine produces something with
-nothing to test it on.
+Un motor de puntuación y un benchmark quedan fuera del alcance hasta que haya
+datos contra los que validarlos. Empezar por el motor produce algo que no
+tiene con qué ponerse a prueba.
 
-## Sources
+## Fuentes
 
-Three studies open phase 1. Their identifiers, licenses and the reason each
-one was chosen are in [`docs/sources.md`](docs/sources.md). No PDFs and no
-figures from those papers are redistributed here. Only extracted values, their
-citation and their location inside the paper.
+Tres estudios abren la fase 1. Sus identificadores, sus licencias y la razón
+por la que se eligió cada uno están en [`docs/fuentes.md`](docs/fuentes.md).
+Aquí no se redistribuye ningún PDF ni ninguna figura de esos artículos. Solo
+los valores extraídos, su cita y su ubicación dentro del artículo.
 
-## Design decision that does not change
+## Decisión de diseño que no cambia
 
-Output never collapses to a single number. Every virus returns separate
-layers, each with its own evidence level:
+La salida nunca se reduce a un solo número. Cada virus devuelve capas
+separadas, cada una con su propio nivel de evidencia:
 
-1. clinical trial
-2. patient derived organoid
-3. cell line
-4. mechanistic reasoning only
+1. ensayo clínico
+2. organoide derivado de paciente
+3. línea celular
+4. solo razonamiento mecanístico
 
-A ranking that mixes clinical evidence with expression based inference and
-emits one score is misinformation with good formatting.
+Un ranking que mezcla evidencia clínica con inferencia basada en expresión y
+emite un único puntaje es desinformación bien formateada.
 
-## Repository layout
+## Distribución del repositorio
 
 ```
-kb/virus/              one YAML file per virus (phase 0)
-data/harmonized/       related CSV tables (phase 1), headers only for now
-gold-standard/         one paper extracted by hand, sealed before agents run
-docs/schema.md         table definitions and the open questions
-docs/preregistration.md  expected failures, written before extraction
-docs/decision-log.md   every harmonization decision, with date and reason
-docs/sources.md        the three studies, with DOI and license
-docs/issues-backlog.md the task list, ready to open as issues
-src/ovh/               package (skeleton)
-tests/                 tests (skipped until the code exists)
+kb/virus/              un archivo YAML por virus (fase 0)
+data/harmonized/       tablas CSV relacionadas (fase 1), por ahora solo encabezados
+referencia-manual/     un artículo extraído a mano, sellado antes de que corran los agentes
+docs/esquema.md        definiciones de las tablas y las preguntas abiertas
+docs/preregistro.md    fallas esperadas, escritas antes de la extracción
+docs/registro-de-decisiones.md  cada decisión de armonización, con fecha y razón
+docs/fuentes.md        los tres estudios, con DOI y licencia
+docs/backlog-de-issues.md  la lista de tareas, lista para abrirse como issues
+src/ovh/               paquete (esqueleto)
+tests/                 pruebas (omitidas hasta que exista el código)
 ```
 
-## How the order of work is fixed
+## Cómo queda fijado el orden del trabajo
 
-One paper is extracted by hand first and sealed in a commit before any agent
-runs. Agent output is then compared against that sealed extraction. The
-protocol is in [`gold-standard/README.md`](gold-standard/README.md). The
-failures the schema is expected to hit are written down before extraction
-starts, in [`docs/preregistration.md`](docs/preregistration.md), so that a
-failure cannot be reinterpreted afterwards as a success.
+Primero se extrae un artículo a mano y se sella en un commit antes de que corra
+cualquier agente. Después la salida de los agentes se compara contra esa
+extracción sellada. El protocolo está en
+[`referencia-manual/README.md`](referencia-manual/README.md). Las fallas que se
+espera que el esquema encuentre quedan escritas antes de que empiece la
+extracción, en [`docs/preregistro.md`](docs/preregistro.md), para que una falla
+no pueda reinterpretarse después como un éxito.
 
-## Metrics this project will report
+## Métricas que este proyecto va a reportar
 
-Counts and rates, defined now and filled in later from the actual run.
+Conteos y tasas, definidos ahora y rellenados más adelante con la ejecución
+real.
 
-* Number of papers, assays, models and measurements. `(fill from run)`
-* Share of values by confidence level. `(fill from run)`
-* Models shared between the three studies after name resolution. `(fill from run)`
-* Field level agreement between two independent agent extractions, and how
-  many disagreements a human had to arbitrate. `(fill from run)`
-* Raw count of errors against the hand extracted paper, not a percentage.
-  `(fill from run)`
-* Minutes per paper, agent assisted against by hand. `(fill from run)`
+* Cantidad de artículos, ensayos, modelos y mediciones. `(rellenar desde la ejecución)`
+* Proporción de valores por nivel de confianza. `(rellenar desde la ejecución)`
+* Modelos compartidos entre los tres estudios después de resolver los nombres. `(rellenar desde la ejecución)`
+* Concordancia campo por campo entre dos extracciones independientes hechas por
+  agentes, y cuántos desacuerdos tuvo que arbitrar una persona. `(rellenar desde la ejecución)`
+* Conteo bruto de errores contra el artículo extraído a mano, no un porcentaje.
+  `(rellenar desde la ejecución)`
+* Minutos por artículo, con ayuda de agentes contra a mano. `(rellenar desde la ejecución)`
 
-## Install
+## Instalación
 
 ```
 python -m pip install -e .
 pytest
 ```
 
-The tests currently skip with an explicit reason, because the code they
-describe is not written yet.
+Por ahora las pruebas se omiten con una razón explícita, porque el código que
+describen todavía no está escrito.
 
-## How to contribute
+## Cómo contribuir
 
-Issues and pull requests are welcome, in English or Spanish.
+Los issues y los pull requests son bienvenidos, en español o en inglés.
 
-* One virus per pull request for `kb/virus/`. Every field with biological
-  content needs its own DOI. A field without a citation stays `null` and goes
-  into `open_questions`.
-* Changes to the schema go through an issue first, and land together with a
-  row in `docs/decision-log.md`.
-* Values read off a figure are accepted with low confidence and must say which
-  tool was used to read them.
-* Do not add PDFs, figures or full supplementary tables from third party
-  papers. Add values with their citation and location.
+* Un virus por pull request para `kb/virus/`. Todo campo con contenido
+  biológico necesita su propio DOI. Un campo sin cita se queda en `null` y pasa
+  a `open_questions`.
+* Los cambios al esquema pasan primero por un issue, y llegan junto con una
+  fila en `docs/registro-de-decisiones.md`.
+* Los valores leídos de una figura se aceptan con confianza baja y tienen que
+  decir con qué herramienta se leyeron.
+* No agregues PDF, figuras ni tablas suplementarias completas de artículos de
+  terceros. Agrega valores con su cita y su ubicación.
 
-## License
+## Licencia
 
-Code is MIT, see [`LICENSE`](LICENSE). Data, schema documents and prose are
-CC BY 4.0, see [`LICENSE-DATA.md`](LICENSE-DATA.md).
+El código es MIT, ver [`LICENSE`](LICENSE). Los datos, los documentos del
+esquema y la prosa son CC BY 4.0, ver
+[`LICENCIA-DATOS.md`](LICENCIA-DATOS.md).
 
-## Citation
+## Cómo citar
 
-See [`CITATION.cff`](CITATION.cff). A citable archived release is a
-possibility once there is data, not a commitment.
+Ver [`CITATION.cff`](CITATION.cff). Una versión archivada y citable es una
+posibilidad cuando haya datos, no un compromiso.

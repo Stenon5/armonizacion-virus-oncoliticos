@@ -1,8 +1,8 @@
-"""Oncolytic virus harmonization.
+"""Armonización de virus oncolíticos.
 
-Scaffold package. Nothing here is implemented yet, and no data has been
-extracted. See docs/issues-backlog.md for the order the pieces are meant to
-be written in.
+Paquete de andamiaje. Nada de lo que hay aquí está implementado todavía, y no
+se ha extraído ningún dato. Ver docs/backlog-de-issues.md para el orden en que
+se supone que se escriben las piezas.
 """
 
 __version__ = "0.0.0"
