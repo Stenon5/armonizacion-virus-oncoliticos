@@ -71,6 +71,11 @@ Un motor de puntuación y un benchmark quedan fuera del alcance hasta que haya
 datos contra los que validarlos. Empezar por el motor produce algo que no
 tiene con qué ponerse a prueba.
 
+El alcance también depende del acceso disponible. Este repositorio trabaja solo
+con datos públicos, y qué desbloquearía cada nivel de acceso, junto con el
+respaldo institucional que haría falta para trabajo experimental, está en
+[`docs/escenarios-de-recursos.md`](docs/escenarios-de-recursos.md).
+
 ## Fuentes
 
 Tres estudios abren la fase 1. Sus identificadores, sus licencias y la razón
@@ -113,6 +118,7 @@ data/harmonized/       tablas CSV relacionadas (fase 1), por ahora solo encabeza
 referencia-manual/     un artículo extraído a mano, sellado antes de que corran los agentes
 docs/origen-de-la-pregunta.md   por qué existe el repositorio, con el caso que lo motivó
 docs/capas-de-evidencia.md      las capas de la pregunta y la evidencia de cada una
+docs/escenarios-de-recursos.md  hasta dónde llega el proyecto según el acceso disponible
 docs/esquema.md        definiciones de las tablas y las preguntas abiertas
 docs/preregistro.md    fallas esperadas, escritas antes de la extracción
 docs/registro-de-decisiones.md  cada decisión de armonización, con fecha y razón
