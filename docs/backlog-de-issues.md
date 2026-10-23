@@ -72,6 +72,27 @@ que no se pueden resolver quedan listados con la razón, y se reporta la
 cantidad de modelos compartidos entre los tres estudios. Un traslape chico o
 igual a cero es un resultado publicable y se escribe como tal.
 
+**[análisis] Medir la concordancia entre los dos tamizajes del NCI-60**
+Etiquetas: `fase-1`, `análisis`
+Depende de que estén extraídos los estudios de 2011 y 2020 y resueltos los
+nombres de los modelos.
+
+Pregunta: en los modelos que los dos estudios comparten, ¿ordenan igual su
+permisividad? Los dos tamizan el mismo panel con el mismo género viral bajo
+ensayos, multiplicidades de infección y tiempos distintos, así que esta es la
+comparación que la armonización existe para poder hacer.
+
+Qué se fija antes de correrlo, en `docs/preregistro.md`: qué estadístico de
+concordancia se usa, cómo se tratan los valores de confianza baja y qué
+resultado se consideraría acuerdo. Nada de eso se decide después de ver los
+números.
+
+Se acepta cuando: el conteo de modelos comparados queda escrito, el resultado
+se reporta tal como salga, y se dice de forma explícita si sostiene o no
+comparar permisividad entre estudios. Un desacuerdo es un resultado y se
+escribe como tal, porque significa que las condiciones del ensayo pesan más
+que el modelo.
+
 **[código] Implementar validate_tables**
 Etiquetas: `fase-1`, `código`
 Se acepta cuando: se revisan las claves foráneas, los valores enumerados y las
